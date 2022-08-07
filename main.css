@@ -1,0 +1,79 @@
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;  
+  padding: 0;  
+  font-family: 'Arial';  
+}
+.welcome h1{
+	color: rgba(0,255,255);
+	font-size: 400%;
+	display: block;
+  text-align: center;
+  margin-top: 18%;
+  height: 50%;
+
+}
+.welcome{
+  background-color: rgb(0, 0, 0, 0.8);
+}
+.Dessert{
+  width: 300px;
+  height: 280px;
+  border-radius: 15px;
+  background-color: transparent;
+  overflow: hidden;
+  text-align: center;
+  perspective: 1000px;
+}
+.Dessert img{
+  width:150px;
+  border-radius: 75px;
+  margin-top: 16%;
+}
+.Dessert-inner {
+  position: relative;                   
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Dessert:hover .Dessert-inner {
+  transform: rotateY(180deg);
+}
+
+.Dessert-front, .Dessert-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.Dessert-front {
+  background-color: white;
+}
+
+.Dessert-back {
+  background-color: gold;
+  transform: rotateY(180deg);
+}
+.Dessert-back h1{
+  margin-top: 38%;
+}
+.column {
+      float: left;
+      width: 25%;
+      padding: 5px;
+      height: 300px;
+    }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;s
+}
